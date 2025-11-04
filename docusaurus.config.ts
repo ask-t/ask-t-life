@@ -53,12 +53,12 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/asktakahashi/ask-t.main-1/tree/main/',
+          editUrl: 'https://github.com/ask-t/ask-t.main-1/tree/main/',
         },
         blog: {
           showReadingTime: true,
-          readingTime: ({ content, frontMatter, defaultReadingTime }) =>
-            defaultReadingTime({ content, options: { wordsPerMinute: 300 } }),
+          readingTime: ({ content, frontMatter, defaultReadingTime, locale }) =>
+            defaultReadingTime({ content, frontMatter, locale, options: { wordsPerMinute: 300 } }),
           feedOptions: {
             type: 'all',
             title: 'ask-t Blog',
@@ -98,22 +98,52 @@ const config: Config = {
           label: 'Resources',
           position: 'left',
           items: [
-            { to: '/blog', label: 'Blog'},
+            { to: '/blog', label: 'Blog' },
             { to: '/docs/intro', label: 'Documentation' },
             { to: '/docs/WRITING_GUIDE', label: 'Writing Guide' },
           ],
         },
-        { href: 'https://github.com/asktakahashi', label: 'GitHub', position: 'right' },
-        { href: 'mailto:ask@example.com', label: 'Contact', position: 'right' },
+        { href: 'https://github.com/ask-t', label: 'GitHub', position: 'right' },
+        { href: 'mailto:please.ask.takahashi@gmail.com', label: 'Contact', position: 'right' },
       ],
     },
     footer: {
       style: 'dark',
       links: [
-        { title: 'Work', items: [{ label: 'Projects', to: '/projects' }, { label: 'Writing', to: '/blog' }] },
-        { title: 'Connect', items: [{ label: 'GitHub', href: 'https://github.com/asktakahashi' }, { label: 'LinkedIn', href: 'https://linkedin.com/in/asktakahashi' }] },
+        {
+          title: 'Work',
+          items: [
+            { label: 'Projects', to: '/projects' },
+            { label: 'Blog', to: '/blog' },
+            { label: 'Profile', to: '/profile' },
+          ],
+        },
+        {
+          title: 'Resources',
+          items: [
+            { label: 'Documentation', to: '/docs/intro' },
+            { label: 'Writing Guide', to: '/docs/WRITING_GUIDE' },
+            { label: 'API Reference', to: '/docs/api/overview' },
+          ],
+        },
+        {
+          title: 'Connect',
+          items: [
+            { label: 'GitHub', href: 'https://github.com/ask-t' },
+            { label: 'LinkedIn', href: 'https://linkedin.com/in/ask-t' },
+            { label: 'Email', href: 'mailto:please.ask.takahashi@gmail.com' },
+          ],
+        },
+        {
+          title: 'About',
+          items: [
+            { label: 'BYU-Hawaii', href: 'https://www.byuh.edu/' },
+            { label: 'Computer Science', to: '/profile' },
+            { label: 'Laie, HI', href: 'https://www.google.com/maps/place/Laie,+HI' },
+          ],
+        },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} ask-t. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Asuku Takahashi. Built with Docusaurus.`,
     },
     algolia: {
       // Algolia検索の設定（オプション）
