@@ -24,13 +24,26 @@ sidebar_position: 1
 3. **アクセシビリティ** - すべてのユーザーに配慮
 4. **レスポンシブ** - あらゆるデバイスで快適に
 
+## 📖 Available Guides
+
+### [Visual Style Guide](./visual-style-guide.md)
+
+Complete visual design system documentation including:
+- Color palette and design tokens
+- Typography system
+- Spacing and layout guidelines
+- Component specifications
+- Animation patterns
+- Accessibility standards
+
+**Use this guide** when creating new components or pages to maintain design consistency.
+
 ## 今後追加予定の内容
 
-- カラーシステムの詳細
-- タイポグラフィスケール
-- コンポーネントカタログ
+- コンポーネントカタログの詳細
 - アイコンライブラリ
-- アニメーション・トランジション
+- インタラクティブコンポーネントデモ
+- Figmaデザインファイル
 
-このセクションは現在準備中です。詳細なドキュメントは順次追加していきます。
+このセクションは継続的に更新されています。
 
