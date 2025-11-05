@@ -6,7 +6,7 @@
       "tags": ["SaaS", "AI/ML", "React"],
       "role": "SaaS Developer Intern",
       "stack": ["React", "TypeScript", "GPT API", "REST API"],
-      "image": "/images/gallery/image1.png",
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image1.png",
       "link": "https://github.com/ask-t",
       "github": "https://github.com/ask-t"
     },
@@ -16,7 +16,7 @@
       "tags": ["Enterprise", "Low-code", "Full-stack"],
       "role": "Student Developer/Analyst",
       "stack": ["Mendix", "ASP.NET", "C#", "Oracle DB", "Docker", "REST API"],
-      "image": "/images/gallery/image2.png",
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image2.png",
       "link": "https://github.com/ask-t",
       "github": "https://github.com/ask-t"
     },
@@ -26,7 +26,7 @@
       "tags": ["API Integration", "Productivity"],
       "role": "Developer",
       "stack": ["Python", "Notion API", "Flask"],
-      "image": "/images/gallery/image3.png",
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image3.png",
       "link": "https://github.com/ask-t/APP_Notion-Datbase",
       "github": "https://github.com/ask-t/APP_Notion-Datbase"
     }
@@ -38,7 +38,7 @@
       "tags": ["SaaS", "AI/ML", "React"],
       "role": "SaaS Developer Intern",
       "stack": ["React", "TypeScript", "GPT API", "REST API"],
-      "image": "/images/gallery/image1.png",
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image1.png",
       "link": "https://github.com/ask-t",
       "github": "https://github.com/ask-t"
     },
@@ -48,7 +48,7 @@
       "tags": ["Enterprise", "Low-code", "Full-stack"],
       "role": "Student Developer/Analyst",
       "stack": ["Mendix", "ASP.NET", "C#", "Oracle DB", "Docker", "REST API"],
-      "image": "/images/gallery/image2.png",
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image2.png",
       "link": "https://github.com/ask-t",
       "github": "https://github.com/ask-t"
     },
@@ -58,7 +58,7 @@
       "tags": ["API Integration", "Productivity"],
       "role": "Developer",
       "stack": ["Python", "Notion API", "Flask"],
-      "image": "/images/gallery/image3.png",
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image3.png",
       "link": "https://github.com/ask-t/APP_Notion-Datbase",
       "github": "https://github.com/ask-t/APP_Notion-Datbase"
     },
@@ -68,7 +68,7 @@
       "tags": ["API", "Translation", "Multilingual"],
       "role": "Developer",
       "stack": ["Python", "REST API", "Translation APIs"],
-      "image": "/images/gallery/image4.png",
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image4.png",
       "link": "https://github.com/ask-t/API_ScriptTranslate",
       "github": "https://github.com/ask-t/API_ScriptTranslate"
     },
@@ -78,7 +78,7 @@
       "tags": ["EdTech", "Language Learning", "Notion"],
       "role": "Developer",
       "stack": ["Python", "Notion API", "Education Tech"],
-      "image": "/images/gallery/image5.png",
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image5.png",
       "link": "https://github.com/ask-t/TangoAPP-with-Notion",
       "github": "https://github.com/ask-t/TangoAPP-with-Notion"
     },
@@ -88,7 +88,7 @@
       "tags": ["Web App", "Organization"],
       "role": "Developer",
       "stack": ["HTML", "CSS", "JavaScript"],
-      "image": "/images/gallery/image6.png",
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image6.png",
       "link": "https://github.com/ask-t/APP_CollectScripture",
       "github": "https://github.com/ask-t/APP_CollectScripture"
     }

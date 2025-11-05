@@ -7,7 +7,7 @@
       "readTime": "12 min read",
       "tags": ["E-commerce", "Architecture", "Scalability"],
       "slug": "ecommerce-platform-architecture",
-      "image": "/images/gallery/image4.png"
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image4.png"
     },
     {
       "title": "Building Enterprise Design Systems: Lessons Learned",
@@ -16,7 +16,7 @@
       "readTime": "9 min read",
       "tags": ["Design Systems", "Enterprise", "Best Practices"],
       "slug": "enterprise-design-systems-lessons",
-      "image": "/images/gallery/image5.png"
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image5.png"
     },
     {
       "title": "Real-time Data Processing: Building Analytics at Scale",
@@ -25,7 +25,7 @@
       "readTime": "15 min read",
       "tags": ["Real-time", "Data Processing", "Analytics"],
       "slug": "realtime-data-processing-analytics",
-      "image": "/images/gallery/image6.png"
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image6.png"
     }
   ],
   "allArticles": [
@@ -36,7 +36,7 @@
       "readTime": "8 min read",
       "tags": ["React", "Architecture", "Best Practices"],
       "slug": "building-scalable-react-applications",
-      "image": "/images/gallery/image1.png"
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image1.png"
     },
     {
       "title": "Design Systems in Practice",
@@ -45,7 +45,7 @@
       "readTime": "6 min read",
       "tags": ["Design Systems", "UI/UX", "Development"],
       "slug": "design-systems-in-practice",
-      "image": "/images/gallery/image2.png"
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image2.png"
     },
     {
       "title": "Performance Optimization Techniques",
@@ -54,7 +54,7 @@
       "readTime": "10 min read",
       "tags": ["Performance", "Optimization", "Web Development"],
       "slug": "performance-optimization-techniques",
-      "image": "/images/gallery/image3.png"
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image3.png"
     },
     {
       "title": "Modern JavaScript Best Practices",
@@ -63,7 +63,7 @@
       "readTime": "7 min read",
       "tags": ["JavaScript", "Best Practices", "Modern Development"],
       "slug": "modern-javascript-best-practices",
-      "image": "/images/gallery/image4.png"
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image4.png"
     },
     {
       "title": "TypeScript Advanced Patterns",
@@ -72,7 +72,7 @@
       "readTime": "11 min read",
       "tags": ["TypeScript", "Advanced Patterns", "Type Safety"],
       "slug": "typescript-advanced-patterns",
-      "image": "/images/gallery/image4.png"
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image4.png"
     },
     {
       "title": "API Design Principles",
@@ -81,7 +81,7 @@
       "readTime": "9 min read",
       "tags": ["API Design", "REST", "Backend Development"],
       "slug": "api-design-principles",
-      "image": "/images/gallery/image4.png"
+      "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image4.png"
     }
   ]
 }
