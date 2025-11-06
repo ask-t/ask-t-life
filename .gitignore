@@ -8,6 +8,9 @@
 .docusaurus
 .cache-loader
 
+# Generated from blog-articles repository
+/docs
+
 # Misc
 .DS_Store
 .env

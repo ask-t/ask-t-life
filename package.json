@@ -7,7 +7,9 @@
     "fetch-articles": "node scripts/fetch-articles.js",
     "prebuild": "npm run fetch-articles",
     "start": "docusaurus start",
+    "dev": "npm run fetch-articles && npm start",
     "build": "docusaurus build",
+    "build-and-serve": "npm run build && npm run serve",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -22,6 +24,7 @@
     "@docusaurus/preset-classic": "3.8.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "dotenv": "^17.2.3",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

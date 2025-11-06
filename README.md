@@ -10,11 +10,25 @@ npm install
 
 ## Local Development
 
+### クイックスタート（記事取得 + 開発サーバー起動）
+
+```bash
+npm run dev
+```
+
+このコマンドは以下を自動実行します：
+1. blog-articlesリポジトリから最新の記事を取得
+2. 開発サーバーを起動してブラウザを開く
+
+変更はライブでリロードされます。
+
+### 開発サーバーのみ起動
+
 ```bash
 npm start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+記事を取得せずに開発サーバーのみ起動します。
 
 ## Blog Articles Management
 
@@ -55,6 +69,8 @@ This command starts a local development server and opens up a browser window. Mo
 
 ## Build
 
+### ビルドのみ
+
 ```bash
 npm run build
 ```
@@ -62,6 +78,19 @@ npm run build
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 **Note:** ビルド前に自動的に `npm run fetch-articles` が実行され、最新の記事が取得されます。
+
+### ビルド + プレビュー（記事取得 + ビルド + 起動）
+
+```bash
+npm run build-and-serve
+```
+
+このコマンドは以下を自動実行します：
+1. blog-articlesリポジトリから最新の記事を取得
+2. 本番用にビルド
+3. ビルドしたサイトをローカルでプレビュー
+
+ビルド結果を確認するのに便利です。
 
 ## Deployment
 

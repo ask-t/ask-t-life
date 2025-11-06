@@ -7,6 +7,9 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
+// .envファイルから環境変数を読み込む
+require('dotenv').config();
+
 // 環境変数から設定を読み込む
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO_OWNER = process.env.ARTICLES_REPO_OWNER; // 例: "your-username"
@@ -15,6 +18,7 @@ const BRANCH = process.env.ARTICLES_REPO_BRANCH || 'main';
 
 // 出力先
 const OUTPUT_FILE = path.join(__dirname, '../src/data/articles.json');
+const DOCS_OUTPUT_DIR = path.join(__dirname, '../docs');
 
 // 設定の検証
 function validateConfig() {
@@ -92,6 +96,56 @@ async function fetchMeta() {
   }
 }
 
+// ディレクトリの内容を取得
+async function fetchDirectoryContents(dirPath) {
+  const endpoint = `/repos/${REPO_OWNER}/${REPO_NAME}/contents/${dirPath}?ref=${BRANCH}`;
+  
+  try {
+    const response = await githubRequest(endpoint);
+    return response;
+  } catch (error) {
+    console.warn(`⚠️  ${dirPath} の取得に失敗:`, error.message);
+    return [];
+  }
+}
+
+// ファイルをダウンロードして保存
+async function downloadAndSaveFile(githubPath, localPath) {
+  try {
+    const endpoint = `/repos/${REPO_OWNER}/${REPO_NAME}/contents/${githubPath}?ref=${BRANCH}`;
+    const response = await githubRequest(endpoint);
+    const content = Buffer.from(response.content, 'base64').toString('utf-8');
+    
+    // ディレクトリを作成
+    const dir = path.dirname(localPath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    
+    // ファイルを保存
+    fs.writeFileSync(localPath, content, 'utf-8');
+    return true;
+  } catch (error) {
+    console.warn(`   ⚠️  ${githubPath} のダウンロードに失敗:`, error.message);
+    return false;
+  }
+}
+
+// ディレクトリを再帰的にダウンロード
+async function downloadDirectory(githubPath, localPath) {
+  const contents = await fetchDirectoryContents(githubPath);
+  
+  for (const item of contents) {
+    const itemLocalPath = path.join(localPath, item.name);
+    
+    if (item.type === 'file') {
+      await downloadAndSaveFile(item.path, itemLocalPath);
+    } else if (item.type === 'dir') {
+      await downloadDirectory(item.path, itemLocalPath);
+    }
+  }
+}
+
 // Markdownファイルを取得
 async function fetchMarkdownContent(filePath) {
   const endpoint = `/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}?ref=${BRANCH}`;
@@ -128,7 +182,7 @@ function extractExcerpt(markdown, maxLength = 200) {
 
 // メイン処理
 async function main() {
-  console.log('🚀 記事の取得を開始します...\n');
+  console.log('🚀 コンテンツの取得を開始します...\n');
   
   // 設定の検証
   validateConfig();
@@ -137,6 +191,9 @@ async function main() {
   console.log('');
   
   try {
+    // === 記事の取得 ===
+    console.log('📝 記事を取得中...\n');
+    
     // meta.jsonを取得
     const meta = await fetchMeta();
     console.log(`✅ meta.json を取得しました（記事数: ${meta.articles.length}）\n`);
@@ -192,6 +249,22 @@ async function main() {
     console.log(`✅ 記事データを保存しました: ${OUTPUT_FILE}`);
     console.log(`   - 全記事: ${articlesWithContent.length}件`);
     console.log(`   - 最新記事: ${recentArticles.length}件`);
+    console.log('');
+    
+    // === ドキュメントの取得 ===
+    console.log('📚 ドキュメントを取得中...\n');
+    
+    // 既存のdocsディレクトリを削除
+    if (fs.existsSync(DOCS_OUTPUT_DIR)) {
+      fs.rmSync(DOCS_OUTPUT_DIR, { recursive: true, force: true });
+      console.log('🗑️  既存のdocsディレクトリを削除しました');
+    }
+    
+    // docsディレクトリを再帰的にダウンロード
+    console.log('📥 docsディレクトリをダウンロード中...');
+    await downloadDirectory('docs', DOCS_OUTPUT_DIR);
+    
+    console.log('✅ ドキュメントを保存しました: ' + DOCS_OUTPUT_DIR);
     console.log('');
     console.log('🎉 完了しました！');
     
