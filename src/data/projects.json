@@ -2,30 +2,36 @@
   "featuredProjects": [
     {
       "title": "AI-Powered SaaS Content Editor",
+      "slug": "ai-saas-content-editor",
       "description": "Core feature development for an unreleased SaaS product with AI-driven content editing capabilities using GPT-based models. Enables users to generate, edit, and optimize content for media, social media, and blog posts with a seamless and responsive user interface.",
       "tags": ["SaaS", "AI/ML", "React"],
       "role": "SaaS Developer Intern",
       "stack": ["React", "TypeScript", "GPT API", "REST API"],
+      "status": "active",
       "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image1.png",
       "link": "https://github.com/ask-t",
       "github": "https://github.com/ask-t"
     },
     {
       "title": "University Enterprise Information Systems",
+      "slug": "university-enterprise-information-systems",
       "description": "Designed and maintained 10+ web applications for various BYU-Hawaii departments using Mendix low-code platform and Oracle DB. Developed REST APIs using ASP.NET in C# with Docker containers to streamline database access for non-backend engineers.",
       "tags": ["Enterprise", "Low-code", "Full-stack"],
       "role": "Student Developer/Analyst",
       "stack": ["Mendix", "ASP.NET", "C#", "Oracle DB", "Docker", "REST API"],
+      "status": "active",
       "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image2.png",
       "link": "https://github.com/ask-t",
       "github": "https://github.com/ask-t"
     },
     {
       "title": "Notion Database Application",
+      "slug": "notion-database-application",
       "description": "Web application that integrates with Notion API to manage and interact with Notion databases, providing enhanced functionality for data management and organization.",
       "tags": ["API Integration", "Productivity"],
       "role": "Developer",
       "stack": ["Python", "Notion API", "Flask"],
+      "status": "completed",
       "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image3.png",
       "link": "https://github.com/ask-t/APP_Notion-Datbase",
       "github": "https://github.com/ask-t/APP_Notion-Datbase"
@@ -34,60 +40,72 @@
   "allProjects": [
     {
       "title": "AI-Powered SaaS Content Editor",
+      "slug": "ai-saas-content-editor",
       "description": "Core feature development for an unreleased SaaS product with AI-driven content editing capabilities using GPT-based models. Enables users to generate, edit, and optimize content for media, social media, and blog posts.",
       "tags": ["SaaS", "AI/ML", "React"],
       "role": "SaaS Developer Intern",
       "stack": ["React", "TypeScript", "GPT API", "REST API"],
+      "status": "active",
       "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image1.png",
       "link": "https://github.com/ask-t",
       "github": "https://github.com/ask-t"
     },
     {
       "title": "University Enterprise Information Systems",
+      "slug": "university-enterprise-information-systems",
       "description": "Designed and maintained 10+ web applications for various BYU-Hawaii departments using Mendix low-code platform and Oracle DB. Developed REST APIs using ASP.NET in C# with Docker containers.",
       "tags": ["Enterprise", "Low-code", "Full-stack"],
       "role": "Student Developer/Analyst",
       "stack": ["Mendix", "ASP.NET", "C#", "Oracle DB", "Docker", "REST API"],
+      "status": "active",
       "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image2.png",
       "link": "https://github.com/ask-t",
       "github": "https://github.com/ask-t"
     },
     {
       "title": "Notion Database Application",
+      "slug": "notion-database-application",
       "description": "Web application that integrates with Notion API to manage and interact with Notion databases, providing enhanced functionality for data management and organization.",
       "tags": ["API Integration", "Productivity"],
       "role": "Developer",
       "stack": ["Python", "Notion API", "Flask"],
+      "status": "completed",
       "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image3.png",
       "link": "https://github.com/ask-t/APP_Notion-Datbase",
       "github": "https://github.com/ask-t/APP_Notion-Datbase"
     },
     {
       "title": "Script Translation API",
+      "slug": "script-translation-api",
       "description": "API service that translates scripts and text content between multiple languages, streamlining multilingual content creation workflows for developers and content creators.",
       "tags": ["API", "Translation", "Multilingual"],
       "role": "Developer",
       "stack": ["Python", "REST API", "Translation APIs"],
+      "status": "completed",
       "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image4.png",
       "link": "https://github.com/ask-t/API_ScriptTranslate",
       "github": "https://github.com/ask-t/API_ScriptTranslate"
     },
     {
       "title": "Tango Learning App with Notion",
+      "slug": "tango-learning-app-with-notion",
       "description": "Language learning application integrated with Notion for vocabulary management. Helps users study Japanese efficiently with organized word lists and spaced repetition techniques.",
       "tags": ["EdTech", "Language Learning", "Notion"],
       "role": "Developer",
       "stack": ["Python", "Notion API", "Education Tech"],
+      "status": "completed",
       "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image5.png",
       "link": "https://github.com/ask-t/TangoAPP-with-Notion",
       "github": "https://github.com/ask-t/TangoAPP-with-Notion"
     },
     {
       "title": "Scripture Collection App",
+      "slug": "scripture-collection-app",
       "description": "Web application for collecting and organizing scripture references. Built with HTML and frontend technologies for easy access and management of religious texts.",
       "tags": ["Web App", "Organization"],
       "role": "Developer",
       "stack": ["HTML", "CSS", "JavaScript"],
+      "status": "completed",
       "image": "https://storage.googleapis.com/askt-dev/ask-t/gallery/image6.png",
       "link": "https://github.com/ask-t/APP_CollectScripture",
       "github": "https://github.com/ask-t/APP_CollectScripture"

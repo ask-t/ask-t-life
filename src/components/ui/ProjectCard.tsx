@@ -10,6 +10,8 @@ interface ProjectCardProps {
   image?: string;
   link?: string;
   github?: string;
+  slug?: string;
+  status?: 'active' | 'completed' | 'archived';
   className?: string;
 }
 
@@ -22,8 +24,11 @@ export default function ProjectCard({
   image,
   link,
   github,
+  slug,
+  status,
   className,
 }: ProjectCardProps) {
+  const detailUrl = slug ? `/docs/projects/${slug}` : undefined;
   return (
     <div className={clsx('project-card group', className)}>
       {image && (
@@ -40,11 +45,30 @@ export default function ProjectCard({
         <div className="flex items-start justify-between mb-4">
           <div>
             <h3 className="text-xl font-semibold text-[var(--fg)] mb-2">
-              {title}
+              {detailUrl ? (
+                <a href={detailUrl} className="hover:text-[var(--accent)] transition-colors">
+                  {title}
+                </a>
+              ) : (
+                title
+              )}
             </h3>
-            <p className="text-sm text-[var(--muted)]">
-              {role}
-            </p>
+            <div className="flex items-center gap-2">
+              <p className="text-sm text-[var(--muted)]">{role}</p>
+              {status && (
+                <span
+                  className={`text-xs px-2 py-0.5 rounded ${
+                    status === 'active'
+                      ? 'bg-green-500/20 text-green-600 dark:text-green-400'
+                      : status === 'completed'
+                      ? 'bg-gray-500/20 text-gray-600 dark:text-gray-400'
+                      : 'bg-amber-500/20 text-amber-600 dark:text-amber-400'
+                  }`}
+                >
+                  {status}
+                </span>
+              )}
+            </div>
           </div>
 
           <div className="flex gap-2">

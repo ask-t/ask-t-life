@@ -1,0 +1,75 @@
+# Cursor Rules for ask-t Personal Knowledge Hub
+
+## Language & Communication
+- Always respond in Japanese (日本語で応答)
+- Use clear, concise explanations
+- Provide code comments in English for consistency
+
+## Project Context
+This is a personal knowledge hub built with Docusaurus that includes:
+- Daily TODO management via GitHub Issues
+- Public/private notes (Notion alternative)
+- Project portfolio and documentation
+
+## Coding Standards
+
+### TypeScript/React
+- Use TypeScript for all new files
+- Prefer functional components with hooks
+- Use proper type annotations (avoid `any`)
+- Follow React best practices
+
+### File Organization
+- Components in `src/components/`
+- Pages in `src/pages/`
+- Data files in `src/data/`
+- Notes in `docs/notes/`
+- Project docs in `docs/projects/`
+
+### Styling
+- Use Tailwind CSS classes
+- Custom CSS in `src/css/custom.css`
+- Use CSS variables for theming (--fg, --muted, --card-bg, etc.)
+
+## GitHub Issue Management
+When working with GitHub Issues for daily TODOs:
+- Use `gh` CLI for issue operations
+- Label daily TODOs with `daily-todo`
+- Format: `YYYY-MM-DD Daily TODO` for issue titles
+
+```bash
+# Issue操作
+gh issue list --label daily-todo
+gh issue view <number>
+gh issue edit <number> --body "..."
+gh issue create --title "YYYY-MM-DD Daily TODO" --label daily-todo
+```
+
+## Common Commands
+```bash
+# Development
+npm run dev          # Start dev server
+npm run build        # Build for production
+npm run serve        # Preview build locally
+```
+
+## Notes Management
+ノートは `docs/notes/` に配置:
+
+- `docs/notes/tech/` - 技術メモ
+- `docs/notes/learning/` - 学習記録
+- `docs/notes/ideas/` - アイデア
+
+### ノートのFrontmatter
+```markdown
+---
+title: ノートタイトル
+tags: [tag1, tag2]
+sidebar_position: 1
+---
+```
+
+## Documentation
+- Use Markdown for all documentation
+- Include frontmatter with title and tags
+- Follow the writing guide at `/docs/WRITING_GUIDE.md`

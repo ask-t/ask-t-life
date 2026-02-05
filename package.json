@@ -4,10 +4,8 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "fetch-articles": "node scripts/fetch-articles.js",
-    "prebuild": "npm run fetch-articles",
     "start": "docusaurus start",
-    "dev": "npm run fetch-articles && npm start",
+    "dev": "docusaurus start",
     "build": "docusaurus build",
     "build-and-serve": "npm run build && npm run serve",
     "swizzle": "docusaurus swizzle",

@@ -457,3 +457,197 @@ html[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
 .btn-hover:hover::before {
   left: 100%;
 }
+
+/* =====================================================
+   Blog Custom Styles - Personal / Simple Design
+   ===================================================== */
+
+/* Blog List Page - シンプルなリスト形式 */
+.blog-list-page {
+  max-width: 800px !important;
+  margin: 0 auto;
+}
+
+/* ブログポストカードをシンプルに */
+article.blog-post-item {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 1rem 0 !important;
+  margin: 0 !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+article.blog-post-item:last-child {
+  border-bottom: none !important;
+}
+
+/* ブログタイトル */
+.blog-post-item h2,
+.blog-post-item .blog-post-title {
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  margin: 0 0 0.5rem 0 !important;
+}
+
+.blog-post-item h2 a,
+.blog-post-item .blog-post-title a {
+  color: var(--fg) !important;
+  text-decoration: none !important;
+}
+
+.blog-post-item h2 a:hover,
+.blog-post-item .blog-post-title a:hover {
+  color: var(--accent) !important;
+}
+
+/* 画像を非表示 */
+.blog-post-item img,
+.blog-post-item .blog-post-image {
+  display: none !important;
+}
+
+/* メタ情報（日付・タグ）*/
+.blog-post-item .blog-post-info,
+.blog-post-item footer {
+  font-size: 0.8rem !important;
+  color: var(--muted) !important;
+  margin-top: 0.25rem !important;
+}
+
+/* タグをインラインに */
+.blog-tags {
+  display: inline !important;
+}
+
+.blog-tags li {
+  display: inline !important;
+  margin-right: 0.5rem !important;
+}
+
+.blog-tags a {
+  background: var(--card-bg) !important;
+  padding: 0.125rem 0.5rem !important;
+  border-radius: 4px !important;
+  font-size: 0.75rem !important;
+  color: var(--muted) !important;
+}
+
+.blog-tags a:hover {
+  background: var(--hover-bg) !important;
+  color: var(--fg) !important;
+}
+
+/* Read More ボタンをシンプルに */
+.blog-post-item .read-more,
+.blog-post-item .button {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  color: var(--muted) !important;
+  font-size: 0.8rem !important;
+}
+
+.blog-post-item .read-more:hover,
+.blog-post-item .button:hover {
+  color: var(--fg) !important;
+  background: none !important;
+}
+
+/* 説明文を短く */
+.blog-post-item .blog-post-summary {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin: 0.5rem 0;
+}
+
+/* サイドバー */
+aside.col--3 {
+  display: none !important; /* サイドバーを非表示にしてシンプルに */
+}
+
+.blog-list-page .col--9 {
+  flex: 0 0 100% !important;
+  max-width: 100% !important;
+}
+
+/* Blog Post Page - 記事ページ */
+article.blog-post {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.blog-post h1 {
+  font-size: 1.75rem !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+}
+
+.blog-post .blog-post-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* アーカイブページ */
+.blog-archive-page h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-top: 2rem;
+}
+
+.blog-archive-page ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-archive-page li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.blog-archive-page li:last-child {
+  border-bottom: none;
+}
+
+/* タグページ */
+.blog-tags-page .tag {
+  display: inline-block;
+  margin: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  background: var(--card-bg);
+  border-radius: 1rem;
+  font-size: 0.875rem;
+}
+
+.blog-tags-page .tag:hover {
+  background: var(--hover-bg);
+}
+
+/* Pagination シンプルに */
+.pagination-nav {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.pagination-nav .pagination-nav__link {
+  border: none !important;
+  padding: 0.5rem 0 !important;
+}
+
+.pagination-nav .pagination-nav__sublabel {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* Reading Time */
+.blog-post-reading-time {
+  font-size: 0.8rem;
+  color: var(--muted);
+}

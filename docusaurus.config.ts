@@ -55,24 +55,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/ask-t/ask-t.main-1/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          readingTime: ({ content, frontMatter, defaultReadingTime, locale }) =>
-            defaultReadingTime({ content, frontMatter, locale, options: { wordsPerMinute: 300 } }),
-          feedOptions: {
-            type: 'all',
-            title: 'ask-t Blog',
-            description: 'Frontend development insights and thoughts',
-            copyright: `Copyright © ${new Date().getFullYear()} ask-t.`,
-            language: 'en',
-          },
-          blogTitle: 'Technical Blog',
-          blogDescription: 'Insights on web development, architecture, and technology',
-          blogSidebarTitle: 'Recent Posts',
-          blogSidebarCount: 5,
-          postsPerPage: 10,
-          archiveBasePath: 'archive',
-        },
+        blog: false, // Blog disabled
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -91,6 +74,7 @@ const config: Config = {
       hideOnScroll: true,
       items: [
         { to: '/', label: 'Home', position: 'left' },
+        { to: '/daily', label: 'Daily TODO', position: 'left' },
         { to: '/profile', label: 'About', position: 'left' },
         { to: '/projects', label: 'Projects', position: 'left' },
         {
@@ -98,8 +82,8 @@ const config: Config = {
           label: 'Resources',
           position: 'left',
           items: [
-            { to: '/blog', label: 'Blog' },
             { to: '/docs/intro', label: 'Documentation' },
+            { to: '/docs/notes', label: 'Notes' },
             { to: '/docs/WRITING_GUIDE', label: 'Writing Guide' },
           ],
         },
@@ -113,8 +97,8 @@ const config: Config = {
         {
           title: 'Work',
           items: [
+            { label: 'Daily TODO', to: '/daily' },
             { label: 'Projects', to: '/projects' },
-            { label: 'Blog', to: '/blog' },
             { label: 'Profile', to: '/profile' },
           ],
         },

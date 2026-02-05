@@ -3,311 +3,276 @@ sidebar_position: 2
 sidebar_label: Writing Guide
 ---
 
-
 # Writing ガイド
 
-このドキュメントでは、ask-tのポートフォリオサイトでブログ記事とプロジェクト情報を更新する方法について説明します。
+このドキュメントでは、ask-t のナレッジハブでコンテンツを作成・管理する方法を説明します。
 
 ## 目次
 
-1. [ブログ記事の更新方法](#ブログ記事の更新方法)
+1. [ノートの作成方法](#ノートの作成方法)
 2. [プロジェクト情報の更新方法](#プロジェクト情報の更新方法)
-3. [画像の追加方法](#画像の追加方法)
-4. [著者情報の更新方法](#著者情報の更新方法)
-5. [タグの管理方法](#タグの管理方法)
-6. [プロファイル情報の更新方法](#プロファイル情報の更新方法)
+3. [Daily TODO の管理](#daily-todo-の管理)
+4. [プロファイル情報の更新方法](#プロファイル情報の更新方法)
 
-## ブログ記事の更新方法
+---
 
-### 1. 記事データの更新
+## ノートの作成方法
 
-ブログ記事の情報は `src/data/articles.json` ファイルで管理されています。
+### ノートの配置場所
 
-#### ファイル構造
+ノートは `docs/notes/` ディレクトリに配置します。
+
+```
+docs/notes/
+├── tech/           # 技術メモ
+├── learning/       # 学習記録
+└── ideas/          # アイデア
+```
+
+### 新しいノートを作成
+
+1. 適切なカテゴリフォルダに `.md` ファイルを作成
+2. Frontmatter を追加
+
+```markdown
+---
+title: ノートのタイトル
+tags: [tag1, tag2]
+sidebar_position: 1
+---
+
+# 内容
+
+ここに本文を書く...
+```
+
+### Frontmatter 項目
+
+| 項目 | 必須 | 説明 |
+|------|------|------|
+| `title` | Yes | ノートのタイトル |
+| `tags` | No | タグ（配列形式） |
+| `sidebar_position` | No | サイドバーでの順序 |
+
+### カテゴリを追加する
+
+新しいカテゴリを追加する場合は、フォルダと `_category_.json` を作成:
+
 ```json
 {
-  "recentArticles": [
-    // 最近の記事（ホームページに表示される）
-  ],
-  "allArticles": [
-    // 全ての記事（ブログページに表示される）
-  ]
+  "label": "カテゴリ名",
+  "position": 4,
+  "description": "カテゴリの説明"
 }
 ```
 
-#### 新しい記事を追加する手順
+### AI での操作
 
-1. `src/data/articles.json` を開く
-2. 適切なセクション（`recentArticles` または `allArticles`）に新しい記事オブジェクトを追加
+Cursor で以下のように指示できます：
 
-```json
-{
-  "title": "記事のタイトル",
-  "excerpt": "記事の要約文（2-3行程度）",
-  "date": "2024-01-20",
-  "readTime": "8 min read",
-  "tags": ["タグ1", "タグ2", "タグ3"],
-  "slug": "article-url-slug",
-  "image": "/images/gallery/image1.png"
-}
-```
+- 「〇〇についてのノートを作成して」
+- 「learning に新しいノートを追加して」
+- 「このノートにタグを追加して」
 
-#### フィールドの説明
-
-- **title**: 記事のタイトル
-- **excerpt**: 記事の要約文（ホームページやブログ一覧で表示）
-- **date**: 公開日（YYYY-MM-DD形式）
-- **readTime**: 読了時間の目安
-- **tags**: 記事のタグ（配列形式）
-- **slug**: URLに使用されるスラッグ（英数字とハイフンのみ）
-- **image**: 記事のサムネイル画像パス
-
-### 2. 記事の順序管理
-
-- `recentArticles`: 最新の記事が上に来るように並べる
-- `allArticles`: 時系列順（新しい順）で並べる
-
-### 3. 既存記事の更新
-
-既存の記事を更新する場合は、該当する記事オブジェクトの内容を編集します。
+---
 
 ## プロジェクト情報の更新方法
 
-### 1. プロジェクトデータの更新
+### プロジェクト一覧（JSON）
 
-プロジェクト情報は `src/data/projects.json` ファイルで管理されています。
+プロジェクト情報は `src/data/projects.json` で管理:
 
-#### ファイル構造
 ```json
 {
-  "featuredProjects": [
-    // 注目プロジェクト（ホームページに表示される）
-  ],
+  "featuredProjects": [...],
   "allProjects": [
-    // 全てのプロジェクト（プロジェクトページに表示される）
+    {
+      "title": "プロジェクト名",
+      "slug": "project-slug",
+      "description": "説明",
+      "tags": ["Tag1", "Tag2"],
+      "role": "役割",
+      "stack": ["Tech1", "Tech2"],
+      "status": "active",
+      "image": "/images/gallery/image1.png",
+      "link": "https://...",
+      "github": "https://github.com/..."
+    }
   ]
 }
 ```
 
-#### 新しいプロジェクトを追加する手順
+### フィールド説明
 
-1. `src/data/projects.json` を開く
-2. 適切なセクション（`featuredProjects` または `allProjects`）に新しいプロジェクトオブジェクトを追加
+| フィールド | 必須 | 説明 |
+|-----------|------|------|
+| `title` | Yes | プロジェクト名 |
+| `slug` | No | 詳細ページへのリンク用 |
+| `description` | Yes | プロジェクトの説明 |
+| `tags` | Yes | タグ（配列） |
+| `role` | Yes | 担当役割 |
+| `stack` | Yes | 技術スタック（配列） |
+| `status` | No | `active` / `completed` / `archived` |
+| `image` | No | サムネイル画像 |
+| `link` | No | デモサイト URL |
+| `github` | No | GitHub リポジトリ URL |
 
-```json
-{
-  "title": "プロジェクト名",
-  "description": "プロジェクトの詳細説明（2-3行程度）",
-  "tags": ["タグ1", "タグ2", "タグ3"],
-  "role": "担当役割",
-  "stack": ["技術1", "技術2", "技術3"],
-  "image": "/images/gallery/image1.png",
-  "link": "https://project-demo.com",
-  "github": "https://github.com/username/project"
-}
+### プロジェクト詳細ページ
+
+詳細ページは `docs/projects/` に Markdown で作成:
+
+```markdown
+---
+title: プロジェクト名
+sidebar_position: 1
+---
+
+# プロジェクト名
+
+## 背景
+
+プロジェクトの背景...
+
+## 技術スタック
+
+- Tech1
+- Tech2
+
+## 学んだこと
+
+...
 ```
 
-#### フィールドの説明
+---
 
-- **title**: プロジェクト名
-- **description**: プロジェクトの詳細説明
-- **tags**: プロジェクトのタグ（配列形式）
-- **role**: プロジェクトでの担当役割
-- **stack**: 使用技術スタック（配列形式）
-- **image**: プロジェクトの画像パス
-- **link**: デモサイトのURL（オプション）
-- **github**: GitHubリポジトリのURL（オプション）
+## Daily TODO の管理
 
-### 2. プロジェクトの順序管理
+Daily TODO は GitHub Issues で管理し、Cursor の `gh` コマンドで操作します。
 
-- `featuredProjects`: 最も重要なプロジェクトを上に配置
-- `allProjects`: 時系列順または重要度順で並べる
+### Issue フォーマット
 
-## 画像の追加方法
+```markdown
+## Tasks
+- [ ] タスク1
+- [ ] タスク2
+- [x] 完了したタスク
 
-### 1. 画像の配置場所
-
-画像は `static/images/gallery/` ディレクトリに配置します。
-
-```
-static/images/gallery/
-├── image1.png
-├── image2.png
-├── image3.png
-├── image4.png
-├── image5.png
-└── image6.png
+## Notes
+今日の気づき...
 ```
 
-### 2. 新しい画像を追加する手順
+### gh コマンド
 
-1. 画像ファイルを `static/images/gallery/` に配置
-2. ファイル名は `image[番号].png` の形式で命名
-3. 記事やプロジェクトの `image` フィールドで参照
+```bash
+# 一覧表示
+gh issue list --label daily-todo
 
-```json
-"image": "/images/gallery/image7.png"
+# 詳細表示
+gh issue view <number>
+
+# 新規作成
+gh issue create --title "2026-01-30 Daily TODO" --label daily-todo
+
+# 更新
+gh issue edit <number> --body "..."
+
+# クローズ
+gh issue close <number>
 ```
 
-### 3. 画像の最適化
+### AI での操作
 
-- 推奨サイズ: 800x600px または 1200x800px
-- ファイル形式: PNG または JPG
-- ファイルサイズ: 500KB以下を推奨
+Cursor で以下のように指示できます：
 
-## 著者情報の更新方法
+- 「今日の TODO を確認して」
+- 「新しいタスクを追加して」
+- 「タスクを完了にして」
+- 「明日の TODO を作成して」
 
-### 1. 著者データの更新
-
-著者情報は `blog/authors.yml` ファイルで管理されています。
-
-```yaml
-ask-t:
-  name: ask-t
-  title: Frontend Developer & Designer
-  url: https://github.com/asktakahashi
-  image_url: https://github.com/asktakahashi.png
-  page: true
-  socials:
-    github: asktakahashi
-    linkedin: asktakahashi
-```
-
-### 2. 新しい著者を追加する手順
-
-1. `blog/authors.yml` を開く
-2. 新しい著者エントリを追加
-
-```yaml
-new-author:
-  name: 著者名
-  title: 肩書き
-  url: プロフィールURL
-  image_url: プロフィール画像URL
-  page: true
-  socials:
-    github: GitHubユーザー名
-    linkedin: LinkedInユーザー名
-    x: Twitterユーザー名
-```
-
-## タグの管理方法
-
-### 1. タグデータの更新
-
-タグ情報は `blog/tags.yml` ファイルで管理されています。
-
-```yaml
-react:
-  label: React
-  permalink: /react
-  description: React関連の記事
-
-typescript:
-  label: TypeScript
-  permalink: /typescript
-  description: TypeScript関連の記事
-```
-
-### 2. 新しいタグを追加する手順
-
-1. `blog/tags.yml` を開く
-2. 新しいタグエントリを追加
-
-```yaml
-new-tag:
-  label: 表示名
-  permalink: /new-tag
-  description: タグの説明
-```
+---
 
 ## プロファイル情報の更新方法
 
-### 1. プロファイルデータの更新
+プロファイル情報は `src/data/profile.json` で管理:
 
-プロファイル情報は `src/data/profile.json` ファイルで管理されています。
+### スキル
 
-#### スキル情報の更新
 ```json
 "skills": [
-  { "name": "スキル名", "level": "レベル" }
+  { "name": "JavaScript", "level": "Proficient" },
+  { "name": "React", "level": "Proficient" }
 ]
 ```
 
-レベル: `Expert`, `Advanced`, `Intermediate`, `Beginner`
+レベル: `Proficient`, `Moderate`, `Beginner`
 
-#### 経験情報の更新
+### 経験
+
 ```json
 "experience": [
   {
     "company": "会社名",
     "role": "役職",
     "period": "期間",
+    "location": "場所",
     "description": "説明"
   }
 ]
 ```
 
-#### プロファイルプロジェクトの更新
+---
+
+## 画像の追加
+
+画像は `static/images/gallery/` に配置:
+
+```
+static/images/gallery/
+├── image1.png
+├── image2.png
+└── ...
+```
+
+参照方法:
 ```json
-"profileProjects": [
-  {
-    "title": "プロジェクト名",
-    "description": "説明",
-    "tech": ["技術1", "技術2"],
-    "link": "URL"
-  }
-]
+"image": "/images/gallery/image1.png"
 ```
 
-## 更新後の確認事項
-
-### 1. 開発サーバーでの確認
-
-```bash
-npm start
-```
-
-### 2. ビルドテスト
-
-```bash
-npm run build
-```
-
-本番環境でのビルドが正常に完了することを確認
-
-### 3. チェックリスト
-
-- [ ] JSONファイルの構文が正しい
-- [ ] 画像パスが正しく設定されている
-- [ ] 日付形式が正しい（YYYY-MM-DD）
-- [ ] タグが適切に設定されている
-- [ ] リンクが正しく設定されている
-
-## トラブルシューティング
-
-### よくある問題
-
-1. **JSON構文エラー**
-   - カンマの忘れや括弧の不整合をチェック
-   - JSONバリデーターを使用して確認
-
-2. **画像が表示されない**
-   - 画像パスが正しいか確認
-   - 画像ファイルが存在するか確認
-
-3. **タグが表示されない**
-   - `blog/tags.yml` にタグが定義されているか確認
-   - 記事のタグ名と一致しているか確認
-
-### サポート
-
-問題が解決しない場合は、以下のリソースを参照してください：
-
-- [Docusaurus公式ドキュメント](https://docusaurus.io/docs)
-- [JSON構文チェッカー](https://jsonlint.com/)
-- [Markdown記法ガイド](https://www.markdownguide.org/)
+推奨:
+- サイズ: 800x600px または 1200x800px
+- 形式: PNG または JPG
+- ファイルサイズ: 500KB 以下
 
 ---
 
-このガイドに従って、効率的にコンテンツを更新してください。質問や問題がある場合は、プロジェクトのメンテナーに連絡してください。
+## 開発コマンド
+
+```bash
+# 開発サーバー起動
+npm run dev
+
+# ビルド
+npm run build
+
+# ビルドプレビュー
+npm run serve
+
+# 型チェック
+npm run typecheck
+```
+
+---
+
+## トラブルシューティング
+
+### JSON 構文エラー
+- カンマの忘れや括弧の不整合をチェック
+- [JSONLint](https://jsonlint.com/) で検証
+
+### 画像が表示されない
+- パスが `/images/gallery/...` で始まっているか確認
+- ファイルが `static/` 以下に存在するか確認
+
+### ビルドエラー
+- `npm run clear` でキャッシュをクリア
+- `npm run typecheck` で型エラーを確認
