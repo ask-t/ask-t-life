@@ -1,0 +1,174 @@
+---
+title: "Step 2: Vocabulary & Church Terms"
+sidebar_position: 2
+tags: [vocabulary, church-terms, {{TAGS}}]
+---
+
+import TextToSpeech from '@site/src/components/TextToSpeech';
+
+# Step 2: Vocabulary & Church Terms
+
+> **学習目標**: 教会用語と重要表現を理解し、正確に発音できるようになる
+
+---
+
+## Church Terminology（教会用語）
+
+### General Conference Terms
+
+| 用語 | 発音 | 意味 | 使用例 |
+|---|---|---|---|
+| **{{TERM1}}** | {{PRON1}} | {{MEANING1}} | {{EXAMPLE1}} |
+| **{{TERM2}}** | {{PRON2}} | {{MEANING2}} | {{EXAMPLE2}} |
+
+<TextToSpeech text="{{GC_TERMS_SENTENCE}}" />
+
+### Scriptural Terms（聖典用語）
+
+| 用語 | 発音 | 意味 | 聖典参照 |
+|---|---|---|---|
+| **{{SCRIPT_TERM1}}** | {{SCRIPT_PRON1}} | {{SCRIPT_MEANING1}} | {{SCRIPT_REF1}} |
+| **{{SCRIPT_TERM2}}** | {{SCRIPT_PRON2}} | {{SCRIPT_MEANING2}} | {{SCRIPT_REF2}} |
+
+<TextToSpeech text="{{SCRIPTURAL_SENTENCE}}" />
+
+### Restoration Terms（回復の用語）
+
+| 用語 | 発音 | 意味 | 説明 |
+|---|---|---|---|
+| **{{REST_TERM1}}** | {{REST_PRON1}} | {{REST_MEANING1}} | {{REST_DESC1}} |
+| **{{REST_TERM2}}** | {{REST_PRON2}} | {{REST_MEANING2}} | {{REST_DESC2}} |
+
+<TextToSpeech text="{{RESTORATION_SENTENCE}}" />
+
+### Doctrinal Terms（教義用語）
+
+| 用語 | 発音 | 意味 | 関連聖句 |
+|---|---|---|---|
+| **{{DOC_TERM1}}** | {{DOC_PRON1}} | {{DOC_MEANING1}} | {{DOC_REF1}} |
+| **{{DOC_TERM2}}** | {{DOC_PRON2}} | {{DOC_MEANING2}} | {{DOC_REF2}} |
+
+<TextToSpeech text="{{DOCTRINAL_SENTENCE}}" />
+
+---
+
+## Key Phrases（重要フレーズ）
+
+### Phrase 1: {{PHRASE1_TITLE}}
+
+<TextToSpeech text="{{PHRASE1_TEXT}}" />
+
+| 要素 | 説明 |
+|---|---|
+| **{{PHRASE1_WORD1}}** | {{PHRASE1_DEF1}} |
+| **{{PHRASE1_WORD2}}** | {{PHRASE1_DEF2}} |
+| **意味** | {{PHRASE1_MEANING}} |
+
+**練習**: 以下の文を声に出して読んでみましょう：
+- "{{PHRASE1_PRACTICE1}}"
+- "{{PHRASE1_PRACTICE2}}"
+
+### Phrase 2: {{PHRASE2_TITLE}}
+
+<TextToSpeech text="{{PHRASE2_TEXT}}" />
+
+| 要素 | 説明 |
+|---|---|
+| **{{PHRASE2_WORD1}}** | {{PHRASE2_DEF1}} |
+| **{{PHRASE2_WORD2}}** | {{PHRASE2_DEF2}} |
+
+### Phrase 3: {{PHRASE3_TITLE}}
+
+<TextToSpeech text="{{PHRASE3_TEXT}}" />
+
+| 要素 | 説明 |
+|---|---|
+| **{{PHRASE3_WORD1}}** | {{PHRASE3_DEF1}} |
+| **{{PHRASE3_WORD2}}** | {{PHRASE3_DEF2}} |
+
+---
+
+## Vocabulary by Section
+
+### Section 1-3: {{SECTION1_TITLE}}
+
+| 単語 | 品詞 | 意味 | 例文 |
+|---|---|---|---|
+| {{VOCAB1}} | {{POS1}} | {{DEF1}} | {{SENT1}} |
+| {{VOCAB2}} | {{POS2}} | {{DEF2}} | {{SENT2}} |
+
+### Section 4-6: {{SECTION2_TITLE}}
+
+| 単語 | 品詞 | 意味 | 例文 |
+|---|---|---|---|
+| {{VOCAB3}} | {{POS3}} | {{DEF3}} | {{SENT3}} |
+| {{VOCAB4}} | {{POS4}} | {{DEF4}} | {{SENT4}} |
+
+---
+
+## Pronunciation Practice
+
+### Hard Words to Pronounce
+
+1. **{{HARD_WORD1}}** {{HARD_PRON1}}
+<TextToSpeech text="{{HARD_WORD1}}" />
+
+2. **{{HARD_WORD2}}** {{HARD_PRON2}}
+<TextToSpeech text="{{HARD_WORD2}}" />
+
+3. **{{HARD_WORD3}}** {{HARD_PRON3}}
+<TextToSpeech text="{{HARD_WORD3}}" />
+
+4. **{{HARD_WORD4}}** {{HARD_PRON4}}
+<TextToSpeech text="{{HARD_WORD4}}" />
+
+5. **{{HARD_WORD5}}** {{HARD_PRON5}}
+<TextToSpeech text="{{HARD_WORD5}}" />
+
+---
+
+## Vocabulary Quiz
+
+### Fill in the Blanks
+
+1. {{QUIZ_BLANK1}}
+2. {{QUIZ_BLANK2}}
+3. {{QUIZ_BLANK3}}
+4. {{QUIZ_BLANK4}}
+5. {{QUIZ_BLANK5}}
+
+<details>
+<summary>答えを見る</summary>
+
+1. {{QUIZ_ANS1}}
+2. {{QUIZ_ANS2}}
+3. {{QUIZ_ANS3}}
+4. {{QUIZ_ANS4}}
+5. {{QUIZ_ANS5}}
+
+</details>
+
+### Match the Terms
+
+| 用語 | | 意味 |
+|---|---|---|
+| 1. {{MATCH_TERM1}} | | a. {{MATCH_DEF1}} |
+| 2. {{MATCH_TERM2}} | | b. {{MATCH_DEF2}} |
+| 3. {{MATCH_TERM3}} | | c. {{MATCH_DEF3}} |
+| 4. {{MATCH_TERM4}} | | d. {{MATCH_DEF4}} |
+| 5. {{MATCH_TERM5}} | | e. {{MATCH_DEF5}} |
+
+<details>
+<summary>答えを見る</summary>
+
+{{MATCH_ANSWERS}}
+
+</details>
+
+---
+
+## Next Step
+
+語彙を理解したら、次は**聖典の背景**を深く学びましょう。
+
+➡️ [Step 3: Scripture Background](./scriptures)

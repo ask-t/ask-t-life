@@ -15,7 +15,28 @@ const config: Config = {
   },
 
   // PostCSS plugins will be handled by postcss.config.cjs
-  plugins: [],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'english-learning',
+        path: 'english-learning',
+        routeBasePath: 'english-learning',
+        sidebarPath: './sidebarsEnglish.ts',
+        editUrl: 'https://github.com/ask-t/ask-t.main-1/tree/main/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'general-conference',
+        path: 'general-conference',
+        routeBasePath: 'general-conference',
+        sidebarPath: './sidebarsGeneralConference.ts',
+        editUrl: 'https://github.com/ask-t/ask-t.main-1/tree/main/',
+      },
+    ],
+  ],
 
   // Set the production url of your site here
   url: 'https://ask-t.vercel.app',
@@ -79,6 +100,15 @@ const config: Config = {
         { to: '/projects', label: 'Projects', position: 'left' },
         {
           type: 'dropdown',
+          label: 'Learning',
+          position: 'left',
+          items: [
+            { to: '/english-learning', label: 'English Learning' },
+            { to: '/general-conference', label: 'General Conference' },
+          ],
+        },
+        {
+          type: 'dropdown',
           label: 'Resources',
           position: 'left',
           items: [
@@ -100,6 +130,13 @@ const config: Config = {
             { label: 'Daily TODO', to: '/daily' },
             { label: 'Projects', to: '/projects' },
             { label: 'Profile', to: '/profile' },
+          ],
+        },
+        {
+          title: 'Learning',
+          items: [
+            { label: 'English Learning', to: '/english-learning' },
+            { label: 'General Conference', to: '/general-conference' },
           ],
         },
         {

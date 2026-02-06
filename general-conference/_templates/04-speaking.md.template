@@ -1,0 +1,252 @@
+---
+title: "Step 4: Speaking Practice"
+sidebar_position: 4
+tags: [speaking, practice, application, {{TAGS}}]
+---
+
+import TextToSpeech from '@site/src/components/TextToSpeech';
+
+# Step 4: Speaking Practice
+
+> **学習目標**: 学んだ内容を自分の言葉で説明し、実生活に適用できるようになる
+
+---
+
+## Speaking Goal
+
+このステップでは以下のことができるようになります：
+
+1. **Explain（説明する）**: 話の内容を英語で説明する
+2. **Share（分かち合う）**: 自分の経験と結びつけて話す
+3. **Testify（証する）**: 学んだ真理について証する
+4. **Apply（適用する）**: 実生活での行動計画を立てる
+
+---
+
+## Part 1: Explaining the Talk
+
+### Exercise 1: One-Minute Summary
+
+話を**1分で要約**する練習をしましょう。以下のテンプレートを使ってください：
+
+<TextToSpeech text="{{SUMMARY_EXAMPLE}}" />
+
+**Template:**
+> "{{SPEAKER_NAME}} spoke about ____________. He/She taught that ____________. The main action we can take is ____________."
+
+**Your Turn:** 録音して聞き直してみましょう。
+
+### Exercise 2: Key Point Explanation
+
+以下のポイントを**2-3文で説明**してみましょう：
+
+#### Point 1: {{POINT1_QUESTION}}
+
+<TextToSpeech text="{{POINT1_EXAMPLE}}" />
+
+**Example:**
+> "{{POINT1_EXAMPLE}}"
+
+**Your explanation:** _______________
+
+#### Point 2: {{POINT2_QUESTION}}
+
+<TextToSpeech text="{{POINT2_EXAMPLE}}" />
+
+**Example:**
+> "{{POINT2_EXAMPLE}}"
+
+**Your explanation:** _______________
+
+#### Point 3: {{POINT3_QUESTION}}
+
+<TextToSpeech text="{{POINT3_EXAMPLE}}" />
+
+**Example:**
+> "{{POINT3_EXAMPLE}}"
+
+**Your explanation:** _______________
+
+---
+
+## Part 2: Sharing Personal Experiences
+
+### Exercise 3: Connecting to Your Life
+
+以下の質問に英語で答える練習をしましょう：
+
+#### Question 1: {{PERSONAL_Q1}}
+
+<TextToSpeech text="{{PERSONAL_EXAMPLE1}}" />
+
+**Prompt:** "{{PERSONAL_PROMPT1}}"
+
+**Template:**
+> "I remember a time when ____________. I learned that ____________. This experience taught me ____________."
+
+#### Question 2: {{PERSONAL_Q2}}
+
+**Prompt:** "{{PERSONAL_PROMPT2}}"
+
+**Template:**
+> "One challenge I face is ____________. After studying this talk, I want to try ____________."
+
+#### Question 3: {{PERSONAL_Q3}}
+
+**Prompt:** "{{PERSONAL_PROMPT3}}"
+
+**Template:**
+> "Someone who inspires me is ____________. They showed me that ____________."
+
+---
+
+## Part 3: Bearing Testimony
+
+### Exercise 4: Testimony Phrases
+
+教会で証するときによく使うフレーズを練習しましょう：
+
+#### Opening Phrases
+
+<TextToSpeech text="I know that {{TESTIMONY_TOPIC}}." />
+
+- "I know that..."（〜であることを知っています）
+- "I believe that..."（〜を信じています）
+- "I have felt..."（〜を感じました）
+- "I have learned that..."（〜を学びました）
+- "I am grateful for..."（〜に感謝しています）
+
+#### Testimony about {{TALK_TOPIC}}
+
+<TextToSpeech text="{{TESTIMONY_EXAMPLE}}" />
+
+**Example:**
+> "{{TESTIMONY_EXAMPLE}}"
+
+#### Closing Phrases
+
+- "I say these things in the name of Jesus Christ, amen."
+- "In the name of Jesus Christ, amen."
+
+### Exercise 5: Write Your Own Testimony
+
+この話について**自分の証**を書いてみましょう（3-5文）：
+
+```
+I know that _____________________________________________.
+
+I have felt _____________________________________________.
+
+I am grateful for _______________________________________.
+
+I want to ______________________________________________.
+
+In the name of Jesus Christ, amen.
+```
+
+---
+
+## Part 4: Application & Action Plan
+
+### {{ACTION_PLAN_TITLE}}
+
+{{SPEAKER_NAME}}が提案した行動ステップを実践しましょう：
+
+#### Step 1: {{ACTION1_TITLE}}
+
+<TextToSpeech text="{{ACTION1_COMMITMENT}}" />
+
+**My commitment:**
+> "This week, when ____________, I will ____________."
+
+**Useful phrases:**
+- "{{ACTION1_PHRASE1}}"
+- "{{ACTION1_PHRASE2}}"
+- "{{ACTION1_PHRASE3}}"
+
+#### Step 2: {{ACTION2_TITLE}}
+
+<TextToSpeech text="{{ACTION2_COMMITMENT}}" />
+
+**My commitment:**
+> "I will ____________ by ____________."
+
+#### Step 3: {{ACTION3_TITLE}}
+
+<TextToSpeech text="{{ACTION3_COMMITMENT}}" />
+
+**My commitment:**
+> "I will reach out to ____________ to ____________."
+
+---
+
+## Part 5: Discussion Questions
+
+### For Personal Study
+
+1. {{DISCUSSION_PERSONAL1}}
+2. {{DISCUSSION_PERSONAL2}}
+3. {{DISCUSSION_PERSONAL3}}
+
+### For Group Discussion
+
+1. {{DISCUSSION_GROUP1}}
+2. {{DISCUSSION_GROUP2}}
+3. {{DISCUSSION_GROUP3}}
+4. {{DISCUSSION_GROUP4}}
+
+### For Teaching Others
+
+もしあなたがこの話について教えるなら、以下の質問を使ってください：
+
+<TextToSpeech text="{{TEACHING_QUESTIONS}}" />
+
+- "{{TEACHING_Q1}}"
+- "{{TEACHING_Q2}}"
+- "{{TEACHING_Q3}}"
+
+---
+
+## Part 6: Final Practice
+
+### Full Presentation (3-5 minutes)
+
+以下の構成で、この話について**3-5分のプレゼンテーション**を練習しましょう：
+
+1. **Introduction** (30 sec): Introduce the talk and speaker
+2. **Main Points** (2 min): Explain the key points
+3. **Scripture** (1 min): Share one scripture that supports the message
+4. **Personal Application** (1 min): Share how you will apply this
+5. **Testimony** (30 sec): Bear your testimony
+
+### Recording Challenge
+
+自分の発表を**録音**して聞き返してみましょう：
+
+- [ ] 発音は明瞭ですか？
+- [ ] 教会用語を正しく使っていますか？
+- [ ] 自然な流れで話せていますか？
+- [ ] 自分の言葉で説明できていますか？
+
+---
+
+## Summary Checklist
+
+このトークの学習を終えて、以下のことができるようになりましたか？
+
+- [ ] 話の全体構造を説明できる
+- [ ] 主要な教会用語を正しく発音・使用できる
+- [ ] 関連する聖典を引用・説明できる
+- [ ] 自分の言葉で話の内容を説明できる
+- [ ] 自分の経験と結びつけて話せる
+- [ ] 証を述べることができる
+- [ ] 実践的な行動計画を立てられる
+
+---
+
+## 関連リンク
+
+- [Step 1: Understanding](./understanding)
+- [Step 2: Vocabulary](./vocabulary)
+- [Step 3: Scriptures](./scriptures)
+- [公式トーク]({{TALK_URL}})

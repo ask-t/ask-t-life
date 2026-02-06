@@ -1,0 +1,132 @@
+---
+title: "Step 1: Understanding the Talk"
+sidebar_position: 1
+tags: [understanding, overview, {{TAGS}}]
+---
+
+import TextToSpeech from '@site/src/components/TextToSpeech';
+
+# Step 1: Understanding the Talk
+
+> **学習目標**: 話の全体構造を把握し、主要なメッセージを理解する
+
+---
+
+## Talk Information
+
+| 項目 | 内容 |
+|---|---|
+| **話者** | {{SPEAKER_NAME}} |
+| **役職** | {{SPEAKER_CALLING}} |
+| **開催** | {{CONFERENCE_DATE}} General Conference |
+| **セッション** | {{SESSION}} |
+| **公式リンク** | [churchofjesuschrist.org]({{TALK_URL}}) |
+
+---
+
+## Core Message（中心メッセージ）
+
+<TextToSpeech text="{{CORE_MESSAGE_TEXT}}" />
+
+> **{{CORE_MESSAGE_TEXT}}**
+
+{{CORE_MESSAGE_EXPLANATION}}
+
+---
+
+## Talk Structure（話の構成）
+
+この話は**{{NUM_SECTIONS}}つのセクション**で構成されています：
+
+### Part 1: {{PART1_TITLE}}
+- {{PART1_BULLET1}}
+- {{PART1_BULLET2}}
+
+### Part 2: {{PART2_TITLE}}
+- {{PART2_BULLET1}}
+- {{PART2_BULLET2}}
+
+<!-- 必要に応じてPartを追加 -->
+
+---
+
+## Key Quotes to Remember
+
+### Quote 1: {{QUOTE1_LABEL}}
+
+<TextToSpeech text="{{QUOTE1_TEXT}}" />
+
+> **"{{QUOTE1_TEXT}}"**
+
+### Quote 2: {{QUOTE2_LABEL}}
+
+<TextToSpeech text="{{QUOTE2_TEXT}}" />
+
+> **"{{QUOTE2_TEXT}}"**
+
+### Quote 3: {{QUOTE3_LABEL}}
+
+<TextToSpeech text="{{QUOTE3_TEXT}}" />
+
+> **"{{QUOTE3_TEXT}}"**
+
+---
+
+## Listening Practice
+
+公式サイトで話を聞きながら、以下の質問に答えてみましょう：
+
+1. **Opening**: {{LISTENING_Q1}}
+2. **Story**: {{LISTENING_Q2}}
+3. **Application**: {{LISTENING_Q3}}
+4. **Action**: {{LISTENING_Q4}}
+
+---
+
+## Comprehension Check
+
+### True or False
+
+1. ( ) {{TF_Q1}}
+2. ( ) {{TF_Q2}}
+3. ( ) {{TF_Q3}}
+4. ( ) {{TF_Q4}}
+5. ( ) {{TF_Q5}}
+
+<details>
+<summary>答えを見る</summary>
+
+1. **{{TF_A1}}** - {{TF_E1}}
+2. **{{TF_A2}}** - {{TF_E2}}
+3. **{{TF_A3}}** - {{TF_E3}}
+4. **{{TF_A4}}** - {{TF_E4}}
+5. **{{TF_A5}}** - {{TF_E5}}
+
+</details>
+
+---
+
+## Summary in Your Own Words
+
+この話を**3文で要約**してみましょう：
+
+1. **Problem（問題）**: _______________
+2. **Solution（解決策）**: _______________
+3. **Action（行動）**: _______________
+
+<details>
+<summary>例を見る</summary>
+
+1. **Problem**: {{SUMMARY_PROBLEM}}
+2. **Solution**: {{SUMMARY_SOLUTION}}
+3. **Action**: {{SUMMARY_ACTION}}
+
+</details>
+
+---
+
+## Next Step
+
+話の全体像を理解したら、次は**語彙と教会用語**を学びましょう。
+
+➡️ [Step 2: Vocabulary & Church Terms](./vocabulary)

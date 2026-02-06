@@ -1,0 +1,121 @@
+---
+title: "Step 3: Scripture Background"
+sidebar_position: 3
+tags: [scriptures, background, {{TAGS}}]
+---
+
+import TextToSpeech from '@site/src/components/TextToSpeech';
+
+# Step 3: Scripture Background
+
+> **学習目標**: 話の中で引用された聖典を深く理解し、文脈を把握する
+
+---
+
+## Primary Scripture: {{PRIMARY_REF}}
+
+### The Scripture
+
+<TextToSpeech text="{{PRIMARY_TEXT}}" />
+
+> **"{{PRIMARY_TEXT}}"**  
+> — {{PRIMARY_REF}} (KJV)
+
+### Context: {{PRIMARY_CONTEXT_TITLE}}
+
+**場所**: {{PRIMARY_LOCATION}}  
+**時期**: {{PRIMARY_TIME}}  
+**聴衆**: {{PRIMARY_AUDIENCE}}
+
+{{PRIMARY_CONTEXT_EXPLANATION}}
+
+### Key Insight
+
+{{PRIMARY_INSIGHT}}
+
+---
+
+## Supporting Scripture 1: {{SUPPORT1_REF}}
+
+### The Scripture
+
+<TextToSpeech text="{{SUPPORT1_TEXT}}" />
+
+> **"{{SUPPORT1_TEXT}}"**  
+> — {{SUPPORT1_REF}}
+
+### Context
+
+{{SUPPORT1_CONTEXT}}
+
+### Key Insight
+
+{{SUPPORT1_INSIGHT}}
+
+---
+
+## Supporting Scripture 2: {{SUPPORT2_REF}}
+
+### The Scripture
+
+<TextToSpeech text="{{SUPPORT2_TEXT}}" />
+
+> **"{{SUPPORT2_TEXT}}"**  
+> — {{SUPPORT2_REF}}
+
+### Context
+
+{{SUPPORT2_CONTEXT}}
+
+### Key Insight
+
+{{SUPPORT2_INSIGHT}}
+
+---
+
+## Supporting Scripture 3: {{SUPPORT3_REF}}
+
+### The Scripture
+
+<TextToSpeech text="{{SUPPORT3_TEXT}}" />
+
+> **"{{SUPPORT3_TEXT}}"**  
+> — {{SUPPORT3_REF}}
+
+### Context
+
+{{SUPPORT3_CONTEXT}}
+
+### Application
+
+{{SUPPORT3_APPLICATION}}
+
+---
+
+## Scripture Cross-Reference Chart
+
+| テーマ | 聖句 | 要点 |
+|---|---|---|
+| {{THEME1}} | {{CROSS_REF1}} | {{CROSS_POINT1}} |
+| {{THEME2}} | {{CROSS_REF2}} | {{CROSS_POINT2}} |
+| {{THEME3}} | {{CROSS_REF3}} | {{CROSS_POINT3}} |
+| {{THEME4}} | {{CROSS_REF4}} | {{CROSS_POINT4}} |
+| {{THEME5}} | {{CROSS_REF5}} | {{CROSS_POINT5}} |
+
+---
+
+## Study Questions
+
+1. {{STUDY_Q1}}
+2. {{STUDY_Q2}}
+3. {{STUDY_Q3}}
+4. {{STUDY_Q4}}
+5. {{STUDY_Q5}}
+
+---
+
+## Next Step
+
+聖典の背景を理解したら、次は**自分の言葉で話す練習**をしましょう。
+
+➡️ [Step 4: Speaking Practice](./speaking)

@@ -1,0 +1,10 @@
+{
+  "label": "{{TALK_TITLE}}",
+  "position": {{POSITION}},
+  "collapsible": true,
+  "collapsed": false,
+  "link": {
+    "type": "doc",
+    "id": "{{YEAR}}/{{MONTH}}/{{TALK_SLUG}}/understanding"
+  }
+}
