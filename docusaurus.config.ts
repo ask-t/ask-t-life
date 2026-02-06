@@ -92,7 +92,13 @@ const config: Config = {
     },
     navbar: {
       title: 'ask-t',
-      hideOnScroll: true,
+      hideOnScroll: false,
+      logo: {
+        alt: 'ask-t Logo',
+        src: 'img/logo.svg',
+        width: 32,
+        height: 32,
+      },
       items: [
         { to: '/', label: 'Home', position: 'left' },
         { to: '/daily', label: 'Daily TODO', position: 'left' },
@@ -125,11 +131,12 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Work',
+          title: 'Navigate',
           items: [
-            { label: 'Daily TODO', to: '/daily' },
+            { label: 'Home', to: '/' },
+            { label: 'About Me', to: '/profile' },
             { label: 'Projects', to: '/projects' },
-            { label: 'Profile', to: '/profile' },
+            { label: 'Daily TODO', to: '/daily' },
           ],
         },
         {
@@ -137,40 +144,34 @@ const config: Config = {
           items: [
             { label: 'English Learning', to: '/english-learning' },
             { label: 'General Conference', to: '/general-conference' },
-          ],
-        },
-        {
-          title: 'Resources',
-          items: [
             { label: 'Documentation', to: '/docs/intro' },
-            { label: 'Writing Guide', to: '/docs/WRITING_GUIDE' },
-            { label: 'API Reference', to: '/docs/api/overview' },
           ],
         },
         {
           title: 'Connect',
           items: [
-            { label: 'GitHub', href: 'https://github.com/ask-t' },
-            { label: 'LinkedIn', href: 'https://linkedin.com/in/ask-t' },
-            { label: 'Email', href: 'mailto:please.ask.takahashi@gmail.com' },
-          ],
-        },
-        {
-          title: 'About',
-          items: [
-            { label: 'BYU-Hawaii', href: 'https://www.byuh.edu/' },
-            { label: 'Computer Science', to: '/profile' },
-            { label: 'Laie, HI', href: 'https://www.google.com/maps/place/Laie,+HI' },
+            { 
+              label: 'GitHub',
+              href: 'https://github.com/ask-t',
+            },
+            { 
+              label: 'LinkedIn',
+              href: 'https://linkedin.com/in/ask-t',
+            },
+            { 
+              label: 'Email',
+              href: 'mailto:please.ask.takahashi@gmail.com',
+            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Asuku Takahashi. Built with Docusaurus.`,
-    },
-    algolia: {
-      // Algolia検索の設定（オプション）
-      appId: 'YOUR_APP_ID',
-      apiKey: 'YOUR_SEARCH_API_KEY',
-      indexName: 'YOUR_INDEX_NAME',
+      logo: {
+        alt: 'ask-t Logo',
+        src: 'img/logo.svg',
+        width: 50,
+        height: 50,
+      },
+      copyright: `© ${new Date().getFullYear()} Asuku Takahashi — BYU-Hawaii CS Student`,
     },
   }
 };
