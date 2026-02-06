@@ -119,7 +119,6 @@ const config: Config = {
           position: 'left',
           items: [
             { to: '/docs/intro', label: 'Documentation' },
-            { to: '/docs/notes', label: 'Notes' },
             { to: '/docs/WRITING_GUIDE', label: 'Writing Guide' },
           ],
         },

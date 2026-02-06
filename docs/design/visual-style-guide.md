@@ -716,7 +716,6 @@ Design a [component name] with:
 ## 🔗 Related Documentation
 
 - [Design System Overview](/docs/design/overview)
-- [Component API Reference](/docs/api/overview)
 - [Accessibility Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
 - [Inter Font](https://rsms.me/inter/)
 
