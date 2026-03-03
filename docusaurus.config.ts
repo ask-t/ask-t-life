@@ -93,12 +93,6 @@ const config: Config = {
     navbar: {
       title: 'ask-t',
       hideOnScroll: false,
-      logo: {
-        alt: 'ask-t Logo',
-        src: 'img/logo.svg',
-        width: 32,
-        height: 32,
-      },
       items: [
         { to: '/', label: 'Home', position: 'left' },
         { to: '/daily', label: 'Daily TODO', position: 'left' },
